@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class UI_script : MonoBehaviour
 {
 
-    public TextMeshProUGUI Pils_text;
+    public Text Pils_text;
     public int Pils_meter = 100;
 
     // Start is called before the first frame update
