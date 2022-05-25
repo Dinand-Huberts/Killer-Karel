@@ -6,6 +6,8 @@ public class ShootScript : MonoBehaviour {
 
     public Transform Gun;
 
+    public Animator gunAnimator;
+
     Vector2 direction;
 
     public GameObject Bullet;
@@ -51,6 +53,7 @@ public class ShootScript : MonoBehaviour {
     {
         GameObject BulletIns = Instantiate(Bullet,ShootPoint.position,ShootPoint.rotation);
         BulletIns.GetComponent<Rigidbody2D>().AddForce(BulletIns.transform.right * BulletSpeed);
+        gunAnimator.SetTrigger("Shoot");
         Destroy(BulletIns,3);
     }
 }
