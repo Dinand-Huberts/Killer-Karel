@@ -26,6 +26,6 @@ public class MainMenu : MonoBehaviour
     
     public void StartCampaign()
     {
-        SceneManager.LoadScene("Daan/DaanScene");
+        SceneManager.LoadScene("Daan/scenes/DaanScene");
     }   
 }
