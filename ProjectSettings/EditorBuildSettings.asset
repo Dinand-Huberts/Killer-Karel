@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Daan/DaanScene.unity
+    guid: 1a2e2d59cb3c7ef4ab331ec67ff8d27e
   m_configObjects: {}
