@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
 {
     public AudioMixer mixer;
     public Slider slider;
+    
     // Start is called before the first frame update
     void Start()
     {

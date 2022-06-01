@@ -413,6 +413,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4675d69e313a3304aa42c4471412f5bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixer: {fileID: 0}
+  slider: {fileID: 0}
 --- !u!1 &102092383
 GameObject:
   m_ObjectHideFlags: 0
@@ -1423,7 +1425,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixer: {fileID: 24100000, guid: 1eb51c51c48aeaa42a912672c5be3965, type: 2}
-  Title: {fileID: 2127266184}
   slider: {fileID: 709837566}
 --- !u!1 &811648570
 GameObject:
@@ -3045,6 +3046,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4675d69e313a3304aa42c4471412f5bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: 1eb51c51c48aeaa42a912672c5be3965, type: 2}
+  slider: {fileID: 709837566}
 --- !u!1 &1644732782
 GameObject:
   m_ObjectHideFlags: 0
