@@ -40,7 +40,6 @@ public class ShootScript : MonoBehaviour {
                ReadyForNextShot = Time.time + 1/fireRate;
                shoot();
            }
-           
        }
     }
 
