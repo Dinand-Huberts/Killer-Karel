@@ -11,6 +11,10 @@ public class PlayerMovement : MonoBehaviour
 
     float horizontalMove = 0f;
     bool jump = false;
+
+    public Transform wallGrabPoint;
+    public LayerMask whatisWall;
+    private bool canGrab, isGrabbing;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +30,22 @@ public class PlayerMovement : MonoBehaviour
         {
             jump = true;
         }
+        //Walljump
+        canGrab = Physics2D.OverlapCircle(wallGrabPoint.position, 2f, whatisWall);
+
+        if(canGrab)
+        {
+            if((transform.localScale.x == 1f && Input.GetAxisRaw("Horizontal") > 0) || (transform.localScale.x == 1f && Input.GetAxisRaw("Horizontal") > 0))
+            {
+                isGrabbing = true;
+            }
+        }
+
+        if(isGrabbing)
+        {
+//            theRB.gravityScale = 0f;
+        }
+
     }
 
     void FixedUpdate()
