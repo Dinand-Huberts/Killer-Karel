@@ -26,12 +26,12 @@ public class GunRotation : MonoBehaviour
 
         if (rotZ < 89 && rotZ > -89)
         {
-            Debug.Log("Facing right");
+            // Debug.Log("Facing right");
             spriteRender.flipY = false;
         }
         else
         {
-            Debug.Log("Facing left");
+            // Debug.Log("Facing left");
             spriteRender.flipY = true;
         }
     }

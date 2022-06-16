@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     float horizontalMove = 0f;
     bool jump = false;
 
-    public Transform wallGrabPoint;
+    // public Transform wallGrabPoint; TODO: Error fixen
     public LayerMask whatisWall;
     private bool canGrab, isGrabbing;
     // Start is called before the first frame update
@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
             jump = true;
         }
         //Walljump
-        canGrab = Physics2D.OverlapCircle(wallGrabPoint.position, 2f, whatisWall);
+        // canGrab = Physics2D.OverlapCircle(wallGrabPoint.position, 2f, whatisWall); TODO
 
         if(canGrab)
         {
