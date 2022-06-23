@@ -16,7 +16,6 @@ public class BulletScript : MonoBehaviour
         }
         Debug.Log(gameObject.tag);
         Destroy(gameObject);
-
     }
 
     // Start is called before the first frame update

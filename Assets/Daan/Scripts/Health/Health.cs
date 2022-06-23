@@ -27,14 +27,14 @@ public class Health : MonoBehaviour
         }
         else
         {
-            if (!dead)
+            if (currentHealth <= 0)
             {
                 // anim.SetTrigger("die");
                 // GetComponent<PlayerMovement>().enabled = false;
                 // GetComponent<ShootScript>().enabled = false;
                 // GetComponent<SwitchWeaponScript>().enabled = false;
+                Destroy(gameObject);
                 
-                SceneManager.LoadScene("DaanScene");
                 // dead = true;
             }
         }
@@ -53,7 +53,7 @@ public class Health : MonoBehaviour
         {
             TakeDamage(1);
         }
-}
+    }
 
     public void AddHealth(float _value)
     {
@@ -61,8 +61,8 @@ public class Health : MonoBehaviour
     }
 
 
-    public void Die()
-    {
-        SceneManager.LoadScene("DaanScene");
-    }
+    // public void Die()
+    // {
+    //     SceneManager.LoadScene("DaanScene");
+    // }
 }
