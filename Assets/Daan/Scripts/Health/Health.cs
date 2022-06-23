@@ -33,7 +33,7 @@ public class Health : MonoBehaviour
                 // GetComponent<PlayerMovement>().enabled = false;
                 // GetComponent<ShootScript>().enabled = false;
                 // GetComponent<SwitchWeaponScript>().enabled = false;
-                Destroy(gameObject);
+                SceneManager.LoadScene("DaanScene");
                 
                 // dead = true;
             }
