@@ -29,13 +29,7 @@ public class Health : MonoBehaviour
         {
             if (currentHealth <= 0)
             {
-                // anim.SetTrigger("die");
-                // GetComponent<PlayerMovement>().enabled = false;
-                // GetComponent<ShootScript>().enabled = false;
-                // GetComponent<SwitchWeaponScript>().enabled = false;
                 SceneManager.LoadScene("DaanScene");
-                
-                // dead = true;
             }
         }
     }
