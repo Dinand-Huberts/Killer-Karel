@@ -2323,7 +2323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Gun: {fileID: 1224925950}
   gunAnimator: {fileID: 1224925951}
-  Bullet: {fileID: 0}
+  Bullet: {fileID: 7697710217161064343, guid: f31928e15216f6d488a965e38191e823, type: 3}
   BulletSpeed: 600
   ShootPoint: {fileID: 1058663287}
   fireRate: 4
@@ -3267,7 +3267,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Gun: {fileID: 1224925950}
   gunAnimator: {fileID: 1224925951}
-  Bullet: {fileID: 0}
+  Bullet: {fileID: 7697710217161064343, guid: f31928e15216f6d488a965e38191e823, type: 3}
   BulletSpeed: 200
   ShootPoint: {fileID: 438305034}
   fireRate: 8
