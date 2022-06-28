@@ -10,6 +10,13 @@ public class BulletScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "enemy")
         {
+            HealthE sn = FindObjectOfType<HealthE>();
+            sn.TakeDamageE(1);
+            Debug.Log("test");
+        }
+
+        if (collision.gameObject.tag == "Player")
+        {
             Health sn = FindObjectOfType<Health>();
             sn.TakeDamage(1);
             Debug.Log("test");
