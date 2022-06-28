@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
+    
+
 
 public class ShootScript : MonoBehaviour {
 
@@ -20,10 +23,14 @@ public class ShootScript : MonoBehaviour {
 
     float ReadyForNextShot;
 
+    public AudioClip gunFired1;
+    public AudioClip gunFired2;
+    public AudioClip gunFired3;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -33,7 +40,9 @@ public class ShootScript : MonoBehaviour {
        direction = mousePos - (Vector2)Gun.position; 
        FaceMouse();
 
-       if(Input.GetMouseButton(0))
+
+
+       if (Input.GetMouseButton(0))
        {
            if(Time.time > ReadyForNextShot)
            {
@@ -50,6 +59,14 @@ public class ShootScript : MonoBehaviour {
 
     void shoot()
     {
+        int randomSound = Random.Range(1, 3);
+        string GunSound = "gunFired" + randomSound;
+
+        // AudioSource gunSoundAudio = GameObject.Find(GunSound);
+
+        AudioSource audio = GetComponent<AudioSource>();
+
+        audio.Play();
         GameObject BulletIns = Instantiate(Bullet,ShootPoint.position,ShootPoint.rotation);
         BulletIns.GetComponent<Rigidbody2D>().AddForce(BulletIns.transform.right * BulletSpeed);
         gunAnimator.SetTrigger("Shoot");
