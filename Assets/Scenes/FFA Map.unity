@@ -71800,9 +71800,9 @@ MonoBehaviour:
   BulletSpeed: 600
   ShootPoint: {fileID: 1162024455}
   fireRate: 4
-  gunFired1: {fileID: 0}
-  gunFired2: {fileID: 0}
-  gunFired3: {fileID: 0}
+  gunFired1: {fileID: 8300000, guid: 5317551fd273544468e43c7651a3c2ae, type: 3}
+  gunFired2: {fileID: 8300000, guid: 3d84f9b2d0151854ca9dfd680406ed39, type: 3}
+  gunFired3: {fileID: 8300000, guid: 6874a693dc554df4faa2c919012fbc72, type: 3}
 --- !u!212 &1861561441
 SpriteRenderer:
   m_ObjectHideFlags: 0
