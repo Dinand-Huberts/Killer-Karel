@@ -31,4 +31,9 @@ public class optionScript : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void StartFFA()
+    {
+       SceneManager.LoadScene("Scenes/FFA Map");
+    }
 }
