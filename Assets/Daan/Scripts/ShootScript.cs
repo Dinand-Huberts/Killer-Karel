@@ -62,11 +62,11 @@ public class ShootScript : MonoBehaviour {
         int randomSound = Random.Range(1, 3);
         string GunSound = "gunFired" + randomSound;
 
-        // AudioSource gunSoundAudio = GameObject.Find(GunSound);
+       /* AudioSource gunSoundAudio = GameObject.Find(GunSound);*/
 
-        AudioSource audio = GetComponent<AudioSource>();
+        /*AudioSource audio = GetComponent<AudioSource>();
 
-        audio.Play();
+        audio.Play();*/
         GameObject BulletIns = Instantiate(Bullet,ShootPoint.position,ShootPoint.rotation);
         BulletIns.GetComponent<Rigidbody2D>().AddForce(BulletIns.transform.right * BulletSpeed);
         gunAnimator.SetTrigger("Shoot");
