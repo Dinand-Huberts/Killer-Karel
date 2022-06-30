@@ -13,6 +13,7 @@ public class turretscript : MonoBehaviour
     float nextTimeToFire = 0;
     public Transform Shootpoint;
     public float Force;
+    private float Distance;
 
     // Start is called before the first frame update
     void Start()
@@ -27,14 +28,15 @@ public class turretscript : MonoBehaviour
         RaycastHit2D rayInfo = Physics2D.Raycast(transform.position,Direction,Range);
         if (rayInfo)
         {
-            if(rayInfo.collider.gameObject.tag == "Player")
+            if (rayInfo.collider.gameObject.tag == "Player")
             {
                 if (Detected == false)
                 {
                     Detected = true;
                 }
             }
-            if(rayInfo.collider.gameObject.tag != "Player")
+
+            else
             {
                 if (Detected == true)
                 {
@@ -43,13 +45,6 @@ public class turretscript : MonoBehaviour
             }
         }
         
-        if(rayInfo.collider.gameObject.tag != "Player")
-        {
-            if (Detected == true)
-            {
-                Detected = false;
-            }
-        }
         
         if (Detected)
         {
