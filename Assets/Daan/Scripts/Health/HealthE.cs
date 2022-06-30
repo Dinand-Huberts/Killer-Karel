@@ -14,7 +14,7 @@ public class HealthE : MonoBehaviour
     private void Awake()
     {
         currentHealthE = startingHealthE;
-        animE = GetComponent<Animator>();
+        
     }
 
     public void TakeDamageE(float _damageE)
@@ -23,7 +23,7 @@ public class HealthE : MonoBehaviour
 
         if (currentHealthE > 0)
         {
-            animE.SetTrigger("hurt");
+            
         }
         else
         {
@@ -43,7 +43,7 @@ public class HealthE : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame

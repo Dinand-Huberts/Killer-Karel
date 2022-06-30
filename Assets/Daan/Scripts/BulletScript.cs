@@ -9,7 +9,7 @@ public class BulletScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "enemy")
         {
-            HealthE sn = FindObjectOfType<HealthE>();
+            HealthE sn = collision.gameObject.GetComponent<HealthE>();
             sn.TakeDamageE(1);
             Debug.Log("test");
         }
