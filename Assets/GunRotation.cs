@@ -7,6 +7,7 @@ public class GunRotation : MonoBehaviour
     // Gun Rotation Function
     public float offset;
     private SpriteRenderer spriteRender;
+    public GameObject player;
 
 
     // Start is called before the first frame update
@@ -22,7 +23,7 @@ public class GunRotation : MonoBehaviour
         // Gun Rotation Function
         Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0f, 0f, rotZ + offset);
+
         
         if (rotZ < 89 && rotZ > -89)
         {
@@ -35,11 +36,6 @@ public class GunRotation : MonoBehaviour
             spriteRender.flipY = true;
         }
        
-       
-       Vector3 diff = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-       diff.Normalize();
- 
-       float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
-       transform.rotation = Quaternion.Euler(0f, 0f, rot_z - 0);
+
     }
 }
