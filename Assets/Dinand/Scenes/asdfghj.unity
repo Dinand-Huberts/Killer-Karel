@@ -1417,6 +1417,7 @@ GameObject:
   - component: {fileID: 438581005}
   - component: {fileID: 438581004}
   - component: {fileID: 438581003}
+  - component: {fileID: 438581006}
   m_Layer: 5
   m_Name: TerugNaarStart
   m_TagString: Untagged
@@ -1487,7 +1488,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 438581004}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 438581006}
+        m_TargetAssemblyTypeName: optionScript, Assembly-CSharp
+        m_MethodName: MainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 438581006}
+        m_TargetAssemblyTypeName: optionScript, Assembly-CSharp
+        m_MethodName: ContinueGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &438581004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1526,6 +1551,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438581001}
   m_CullTransparentMesh: 1
+--- !u!114 &438581006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438581001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a695dc4ef055b7244b0002144d427d81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &449084195
 GameObject:
   m_ObjectHideFlags: 0
@@ -2605,6 +2642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: 0
+  player: {fileID: 0}
 --- !u!1 &1048261395
 GameObject:
   m_ObjectHideFlags: 0
@@ -2835,6 +2873,7 @@ MonoBehaviour:
   guns: []
   weaponHolder: {fileID: 1070398630}
   currentGun: {fileID: 0}
+  player: {fileID: 0}
 --- !u!1 &1075199457
 GameObject:
   m_ObjectHideFlags: 0
@@ -2882,6 +2921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: 0
+  player: {fileID: 0}
 --- !u!114 &1075199460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3372,6 +3412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: 0
+  player: {fileID: 0}
 --- !u!82 &1148905797
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3611,6 +3652,7 @@ MonoBehaviour:
   guns: []
   weaponHolder: {fileID: 1224925949}
   currentGun: {fileID: 0}
+  player: {fileID: 0}
 --- !u!1 &1236673431
 GameObject:
   m_ObjectHideFlags: 0

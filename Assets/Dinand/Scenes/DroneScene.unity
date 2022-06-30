@@ -709,6 +709,7 @@ MonoBehaviour:
   guns: []
   weaponHolder: {fileID: 357186600}
   currentGun: {fileID: 0}
+  player: {fileID: 0}
 --- !u!1 &386087846
 GameObject:
   m_ObjectHideFlags: 0
@@ -1055,6 +1056,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: 0
+  player: {fileID: 0}
 --- !u!114 &451239225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1196,6 +1198,7 @@ MonoBehaviour:
   guns: []
   weaponHolder: {fileID: 594170688}
   currentGun: {fileID: 0}
+  player: {fileID: 0}
 --- !u!1 &664835365
 GameObject:
   m_ObjectHideFlags: 0
@@ -1461,6 +1464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: 0
+  player: {fileID: 0}
 --- !u!114 &710464092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2049,8 +2053,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 916310203}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.119, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.157, y: 0.147, z: 0}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
   - {fileID: 1811744859}
   - {fileID: 451239223}
@@ -2092,6 +2096,7 @@ MonoBehaviour:
   guns: []
   weaponHolder: {fileID: 916310203}
   currentGun: {fileID: 0}
+  player: {fileID: 0}
 --- !u!1 &957541399
 GameObject:
   m_ObjectHideFlags: 0
@@ -2116,7 +2121,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 957541399}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.2, z: 0}
+  m_LocalPosition: {x: 0, y: 0.651, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1876494745}
@@ -2146,7 +2151,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988005007}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.03, y: -0.3, z: 0}
+  m_LocalPosition: {x: -0.03, y: -0.65, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1876494745}
@@ -3083,8 +3088,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1811744858}
   m_LocalRotation: {x: 0, y: 0, z: 0.0076619643, w: 0.9999707}
-  m_LocalPosition: {x: 0.165, y: -0.065, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 4.1996}
+  m_LocalPosition: {x: 0.3, y: -0.092, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 4.1996}
   m_Children:
   - {fileID: 1430769452}
   m_Father: {fileID: 916310204}
@@ -3110,7 +3115,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 0.03821987
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -3193,12 +3198,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1811744858}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 983aaad1424c9c848934b185beade3ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   offset: 0
+  player: {fileID: 0}
 --- !u!114 &1811744862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3260,7 +3266,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: ffa51617c4b69c34395c4907db001f83, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cfb565738deec5548a0ad488f9b6d1cf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3353,18 +3359,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.004050672, y: 0.008101344}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.64}
+    oldSize: {x: 0.64, y: 1.28}
     newSize: {x: 0.64, y: 0.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3, y: 0.65}
+  m_Size: {x: 0.63755524, y: 1.2765025}
   m_EdgeRadius: 0
 --- !u!50 &1876494741
 Rigidbody2D:
@@ -3472,7 +3478,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0903541d1e41c1244aae590367daef78, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4c899ca9ec9d5fc448ebc84189905727, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -3492,7 +3498,7 @@ Transform:
   m_GameObject: {fileID: 1876494736}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.16, y: 0.83, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
   - {fileID: 1629706619}
   - {fileID: 957541400}
@@ -3810,6 +3816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: 0
+  player: {fileID: 0}
 --- !u!114 &1976539066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4060,6 +4067,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: 0
+  player: {fileID: 0}
 --- !u!114 &2038340488
 MonoBehaviour:
   m_ObjectHideFlags: 0
