@@ -29,7 +29,7 @@ public class Health : MonoBehaviour
         {
             if (currentHealth <= 0)
             {
-                SceneManager.LoadScene("DaanScene");
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
         }
     }

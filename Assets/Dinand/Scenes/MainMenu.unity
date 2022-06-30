@@ -279,6 +279,7 @@ GameObject:
   - component: {fileID: 87055138}
   - component: {fileID: 87055137}
   - component: {fileID: 87055136}
+  - component: {fileID: 87055139}
   m_Layer: 5
   m_Name: CampaignButton
   m_TagString: Untagged
@@ -350,8 +351,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+      - m_Target: {fileID: 87055139}
+        m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
         m_MethodName: StartCampaign
         m_Mode: 1
         m_Arguments:
@@ -400,6 +401,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87055134}
   m_CullTransparentMesh: 1
+--- !u!114 &87055139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87055134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd08e476a190e4743bfb76b6a06d64c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &102092383
 GameObject:
   m_ObjectHideFlags: 0
@@ -1461,7 +1474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3400,7 +3413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.18867922, g: 0.18867922, b: 0.18867922, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
