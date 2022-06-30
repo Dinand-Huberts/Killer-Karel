@@ -2752,7 +2752,6 @@ GameObject:
   - component: {fileID: 1515552463}
   - component: {fileID: 1515552466}
   - component: {fileID: 1515552465}
-  - component: {fileID: 1515552464}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -2782,40 +2781,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1515552464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1515552462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d68a8e3b1b1730647aa12a7c5ff08f9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animatedImages:
-  - {fileID: 21300000, guid: 3e380ab69c6cc8f48ba7e92755071293, type: 3}
-  - {fileID: 21300000, guid: d1ac6f6710bdee343b013af573efed8f, type: 3}
-  - {fileID: 21300000, guid: 1eca5469ada40994bb3c8a06d2ac3ce3, type: 3}
-  - {fileID: 21300000, guid: 2991bda5fdfd01c488399d475e464306, type: 3}
-  - {fileID: 21300000, guid: 8ba0efb083c204448b495b76c3fcba16, type: 3}
-  - {fileID: 21300000, guid: 39e2ec5b26a48ed43bce207979ababd1, type: 3}
-  - {fileID: 21300000, guid: 14c7c4cce5008b641aebdb670566d5e1, type: 3}
-  - {fileID: 21300000, guid: 83570ec0e8277d840b5bc4c32f32b43c, type: 3}
-  - {fileID: 21300000, guid: 85fd0b0b90f0ad948a4ca706538804c9, type: 3}
-  - {fileID: 21300000, guid: e115eb7c32909e148b321f23ae39693d, type: 3}
-  - {fileID: 21300000, guid: 46d49523e32900a468837bb6c4139cb0, type: 3}
-  - {fileID: 21300000, guid: 4694320267cd0284188b37874bd413a9, type: 3}
-  - {fileID: 21300000, guid: 2a440bd8d745bdd45b3e17f703ece4f1, type: 3}
-  - {fileID: 21300000, guid: f3e8de25e1b7e25488b83bea52c503ce, type: 3}
-  - {fileID: 21300000, guid: d6b178a17fae5e543b01bc17ad27f225, type: 3}
-  - {fileID: 21300000, guid: d868f46dde2731a4dbc95f6a5618ae02, type: 3}
-  - {fileID: 21300000, guid: a4a9dfb4251e372419cf7e35625630bd, type: 3}
-  - {fileID: 21300000, guid: 6f493900d9fba0548a7d75ffe02603a1, type: 3}
-  - {fileID: 21300000, guid: 58342d668a02abe499b074d76a85d434, type: 3}
-  - {fileID: 21300000, guid: 42d8e27fb54ae0746b640ee2da0529d0, type: 3}
-  animateImageObj: {fileID: 608789322}
 --- !u!114 &1515552465
 MonoBehaviour:
   m_ObjectHideFlags: 0
