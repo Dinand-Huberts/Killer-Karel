@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91ad4b41-e0f1-4b24-b702-d4f02cf82786" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scenes/JayScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/JayScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,11 +41,21 @@
       <workItem from="1656420542980" duration="36000" />
       <workItem from="1656420598704" duration="5094000" />
       <workItem from="1656493315830" duration="2437000" />
-      <workItem from="1656580595098" duration="63000" />
+      <workItem from="1656580595098" duration="1484000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
 </project>
