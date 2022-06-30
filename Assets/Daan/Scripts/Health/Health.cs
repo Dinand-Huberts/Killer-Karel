@@ -55,8 +55,5 @@ public class Health : MonoBehaviour
     }
 
 
-    // public void Die()
-    // {
-    //     SceneManager.LoadScene("DaanScene");
-    // }
+
 }

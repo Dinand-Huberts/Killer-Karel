@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/JayScene.unity
     guid: 70b85a3e7a9ebea4ca56222e57adb457
   - enabled: 1
+    path: Assets/Dinand/Scenes/asdfghj.unity
+    guid: 13edeb0bc69432c419cfd4a8fef2c51e
+  - enabled: 1
     path: Assets/Scenes/FFA Map.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
