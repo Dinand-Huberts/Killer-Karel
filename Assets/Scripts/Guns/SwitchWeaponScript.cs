@@ -7,10 +7,13 @@ public class SwitchWeaponScript : MonoBehaviour
 
     int totalWeapons = 1;
     public int currentWeaponIndex;
-
+private Inventory inventory;
     public GameObject[] guns;
     public GameObject weaponHolder;
     public GameObject currentGun;
+    public GameObject player;
+    
+    
 
     // Start is called before the first frame update
     void Start()
@@ -32,14 +35,19 @@ public class SwitchWeaponScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+      
+
         if(Input.GetKeyDown(KeyCode.E))
         {
             //next Weapon
             if(currentWeaponIndex < totalWeapons-1)
             {
                 guns[currentWeaponIndex].SetActive(false);
+                player.GetComponent<Inventory>().equipedGuns[currentWeaponIndex].SetActive(false);
                 currentWeaponIndex += 1;
                 guns[currentWeaponIndex].SetActive(true);
+                player.GetComponent<Inventory>().equipedGuns[currentWeaponIndex].SetActive(true);
                 currentGun = guns[currentWeaponIndex];
             }
         }
@@ -50,8 +58,10 @@ public class SwitchWeaponScript : MonoBehaviour
             if(currentWeaponIndex > 0)
             {
                 guns[currentWeaponIndex].SetActive(false);
+                player.GetComponent<Inventory>().equipedGuns[currentWeaponIndex].SetActive(false);
                 currentWeaponIndex -= 1;
                 guns[currentWeaponIndex].SetActive(true);
+                player.GetComponent<Inventory>().equipedGuns[currentWeaponIndex].SetActive(true);
                 currentGun = guns[currentWeaponIndex];
             }
         }

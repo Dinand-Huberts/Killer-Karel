@@ -2,18 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Inventory : MonoBehaviour
+public class SwitchWeaponScript2E : MonoBehaviour
 {
-
-    public bool[] isFull;
+public bool[] isFull;
     public GameObject[] slots;
     public GameObject[] guns;
-    public GameObject[] equipedGuns;
+    
     private string temp;
+    
 
 
-   
-    public void addGun(string gunName, int i, GameObject itemButton){
+
+    public void switchGun(string gunName, int i, GameObject itemButton){
        
         isFull[i] = true;
         switch (gunName)
@@ -27,30 +27,12 @@ public class Inventory : MonoBehaviour
            
         }
 
-        foreach(GameObject go in guns)
- {
-    
-     if(go.name == temp)
-     {
-        equipedGuns[i] = go; 
         
-
-     }
- }
-
 
 
         Instantiate(itemButton, slots[i].transform, false);
     }
-
-    
-
-}
+    }
 
 
-
-
-
-
-   
 

@@ -7,9 +7,15 @@ public class PickUp : MonoBehaviour
 
 private Inventory inventory;
 public GameObject itemButton;
+public GameObject currentGun;
+ public GameObject[] guns;
+  public GameObject weaponHolder;
+
+
     
    private void Start()
     {
+       
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
     }
 
@@ -20,12 +26,13 @@ public GameObject itemButton;
         {
             if  (inventory.isFull[i] == false)
             {
-                inventory.isFull[i] = true;
-                Instantiate(itemButton, inventory.slots[i].transform, false);
+                inventory.addGun(gameObject.name, i, itemButton);
+                
                 Destroy(gameObject);
                 break;
             }
         }
     }
  }
+ 
 }
