@@ -535,7 +535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0ff3f2c6e937c4b81e5ce49f40b2c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 3
+  startingHealth: 5
 --- !u!61 &515383098
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -71426,7 +71426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Range: 5
-  Target: {fileID: 192847604}
+  Target: {fileID: 515383103}
   Gun: {fileID: 1568191701}
   bullet: {fileID: 7697710217161064343, guid: f31928e15216f6d488a965e38191e823, type: 3}
   FireRate: 2
